@@ -1,10 +1,14 @@
 {
     "compilerVersion": "0.6.12",
 
+    "owner": {
+        "publicKey": "",
+        "privateKey": ""
+    },
+
     "network": {
-        "host": "127.0.0.1",
-        "port": 7545,
-        "network_id": "5777"
+        "rpc": "HTTP://127.0.0.1:7545",
+        "chainId": 5777
     },
 
     "contracts": {

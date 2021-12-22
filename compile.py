@@ -17,9 +17,9 @@ def run():
     # Validation
     try:
         contract_name = sys.argv[1]
-        contracts_files = config['contracts'][contract_name]
+        contract_files = config['contracts'][contract_name]
     except (IndexError, KeyError):
-        raise KeyError("Contract name is not found!")
+        raise KeyError("Unexpected Parameters EX: compile.py ContractName")
 
     # Initialize
     build_dir = os.path.join('build', contract_name)
@@ -27,7 +27,7 @@ def run():
     sources = {}
 
     # Build sol files
-    for name, path in contracts_files.items():
+    for name, path in contract_files.items():
         sources.update({name: {'content': ''}})
         with open(os.path.abspath(path), 'r') as reader:
             with open(os.path.join(build_dir, name), 'w') as writer:
