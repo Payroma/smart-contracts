@@ -1,0 +1,21 @@
+{
+    "compilerVersion": "0.6.12",
+
+    "network": {
+        "host": "127.0.0.1",
+        "port": 7545,
+        "network_id": "5777"
+    },
+
+    "contracts": {
+        "PayromaToken": {
+            "Token.sol": "contracts/token/BEP20/Token.sol",
+            "BEP20.sol": "contracts/token/BEP20/BEP20.sol",
+            "IBEP20.sol": "contracts/token/BEP20/IBEP20.sol",
+            "Ownable.sol": "contracts/access/Ownable.sol",
+            "Context.sol": "contracts/GSN/Context.sol",
+            "SafeMath.sol": "contracts/math/SafeMath.sol",
+            "Address.sol": "contracts/utils/Address.sol"
+        }
+    }
+}
