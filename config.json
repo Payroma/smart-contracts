@@ -20,6 +20,11 @@
             "Context.sol": "contracts/GSN/Context.sol",
             "SafeMath.sol": "contracts/math/SafeMath.sol",
             "Address.sol": "contracts/utils/Address.sol"
+        },
+        "PNSProtocol": {
+            "PNSProtocol.sol": "contracts/PNSProtocol/PNSProtocol.sol",
+            "Ownable.sol": "contracts/access/Ownable.sol",
+            "Context.sol": "contracts/GSN/Context.sol"
         }
     }
 }
