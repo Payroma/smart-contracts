@@ -25,6 +25,17 @@
             "PNSProtocol.sol": "contracts/PNSProtocol/PNSProtocol.sol",
             "Ownable.sol": "contracts/access/Ownable.sol",
             "Context.sol": "contracts/GSN/Context.sol"
+        },
+        "StakingRewards": {
+            "StakingRewards.sol": "contracts/stake/StakingRewards.sol",
+            "Pausable.sol": "contracts/access/Pausable.sol",
+            "Ownable.sol": "contracts/access/Ownable.sol",
+            "Context.sol": "contracts/GSN/Context.sol",
+            "SafeBEP20.sol": "contracts/token/BEP20/SafeBEP20.sol",
+            "IBEP20.sol": "contracts/token/BEP20/IBEP20.sol",
+            "SafeMath.sol": "contracts/math/SafeMath.sol",
+            "Address.sol": "contracts/utils/Address.sol",
+            "ReentrancyGuard.sol": "contracts/utils/ReentrancyGuard.sol"
         }
     }
 }
