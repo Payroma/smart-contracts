@@ -247,9 +247,9 @@ contract StakingRewards is ReentrancyGuard, Pausable {
      * @notice Stop rewards
      * @dev Only callable by owner. Needs to be for emergency.
      */
-    function emergencyRewardWithdraw(uint256 _amount) external onlyOwner {
-        require(_amount <= rewardSupply(), "Withdraw amount exceeds rewards");
-        rewardToken.safeTransfer(address(msg.sender), _amount);
+    function emergencyRewardWithdraw(uint256 _rewardAmount) external onlyOwner {
+        require(_rewardAmount <= rewardSupply(), "Withdraw amount exceeds rewards");
+        rewardToken.safeTransfer(address(msg.sender), _rewardAmount);
     }
 
     /**
